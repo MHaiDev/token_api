@@ -7,3 +7,4 @@ pytest
 httpx
 asyncpg
 pytest-asyncio
+psycopg2
