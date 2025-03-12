@@ -1,14 +1,14 @@
-# Virtuelle Umgebung
+# Virtual environment
 venv/
-
-# __pycache__ Ordner
-__pycache__/
 
 # Alembic Migrations
 alembic/versions/
 
-# Lokale Umgebungsvariablen
+# Local environment variables
 .env
 
-# Sonstige Dateien
+# Other files
 *.log
+__pycache__/
+*.png
+script.py.mako

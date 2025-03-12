@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from app.routes import tokens
 
 app = FastAPI()
 
-@app.get("/")
-async def root():
-    return {"message": "API is running!"}
+app.include_router(tokens.router)
