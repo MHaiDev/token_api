@@ -3,6 +3,15 @@
 ## Overview
 This is a FastAPI-based token authentication service using PostgreSQL as the database. The application is designed to run both locally and in a Dockerized environment.
 
+## Features
+This API provides full CRUD (Create, Read, Update, Delete) functionality for managing tokens:
+
+- **Create a Token:** Add a new token with a name and symbol.
+- **Read Tokens:** Retrieve a list of all tokens.
+- **Read a Single Token:** Fetch details of a specific token by ID.
+- **Update a Token:** Modify an existing token's name or symbol.
+- **Delete a Token:** Remove a token from the database.
+
 ## Running Locally
 To run the application locally, follow these steps:
 
@@ -56,3 +65,4 @@ The application expects the following environment variables:
 - The application automatically detects if it is running in a Docker container and adjusts the database hostname accordingly.
 - The API documentation is available at `http://localhost:8000/docs` when the application is running.
 - The database schema is automatically created using `Base.metadata.create_all()` during startup—no manual migrations required.
+
