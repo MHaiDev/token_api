@@ -8,7 +8,6 @@ This API provides full CRUD (Create, Read, Update, Delete) functionality for man
 
 - **Create a Token:** Add a new token with a name and symbol.
 - **Read Tokens:** Retrieve a list of all tokens.
-- **Read a Single Token:** Fetch details of a specific token by ID.
 - **Update a Token:** Modify an existing token's name or symbol.
 - **Delete a Token:** Remove a token from the database.
 
