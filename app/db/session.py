@@ -3,7 +3,9 @@ from sqlalchemy.orm import sessionmaker
 from app.models.token import Base  
 
 # Database connection URL (using asyncpg driver)
-DATABASE_URL = "postgresql+asyncpg://user:password@localhost/token_db"
+#DATABASE_URL = "postgresql+asyncpg://user:password@localhost/token_db"
+DATABASE_URL = "postgresql+asyncpg://user:password@db/token_db"
+
 
 # Create an asynchronous engine
 engine = create_async_engine(DATABASE_URL, echo=True)
