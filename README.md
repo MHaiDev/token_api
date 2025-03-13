@@ -6,38 +6,38 @@ This is a FastAPI-based token authentication service using PostgreSQL as the dat
 ## Running Locally
 To run the application locally, follow these steps:
 
-### Install dependencies
-```bash
-pip install -r requirements.txt
-```
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Start the PostgreSQL database using Docker
-```bash
-docker-compose up -d db
-```
+2. Start the PostgreSQL database using Docker:
+   ```bash
+   docker-compose up -d db
+   ```
 
-### Start the FastAPI application
-```bash
-uvicorn app.main:app --reload
-```
+3. Start the FastAPI application:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
 ## Running with Docker
 To run the application in a Docker container, execute the following commands:
 
-### Stop and remove any existing containers and volumes
-```bash
-docker-compose down -v
-```
+1. Stop and remove any existing containers and volumes:
+   ```bash
+   docker-compose down -v
+   ```
 
-### Build the Docker images
-```bash
-docker-compose build
-```
+2. Build the Docker images:
+   ```bash
+   docker-compose build
+   ```
 
-### Start the containers
-```bash
-docker-compose up --force-recreate
-```
+3. Start the containers:
+   ```bash
+   docker-compose up --force-recreate
+   ```
 
 ## Running Tests
 To run the test suite using Pytest with code coverage:
@@ -48,11 +48,8 @@ pytest --cov=app --cov-report=term-missing
 ## Environment Variables
 The application expects the following environment variables:
 
-### Backend (.env)
-```ini
-DATABASE_URL=postgresql://user:password@localhost:5432/token_api
-DOCKER_ENV=1  # Set to 1 when running in Docker
-```
+- `DATABASE_URL`: The connection string for the PostgreSQL database.
+- `DOCKER_ENV`: Set to `1` when running in Docker to ensure correct database hostname resolution.
 
 ## Notes
 - A Postman collection (`token_api.postman_collection.json`) is included in the repository to test API routes easily.
